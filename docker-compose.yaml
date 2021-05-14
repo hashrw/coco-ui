@@ -1,0 +1,19 @@
+version: "3.3"
+services:
+  validacionCoco:
+    image: node:lts
+    stdin_open: true
+    restart: always
+    expose:
+      - "80"
+    ports:
+      - "80:3000"
+    environment:
+      - "PORT=3000"
+    volumes:
+      - ./:/development/validacionCoco
+    working_dir: /development/validacionCoco
+    # Desarrollo
+    command: sh -c "npm install && npm start"
+    # producción
+    #command: sh -c "npm run serve"
