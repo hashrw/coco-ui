@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+/*import AuthProvider from "./auth/AuthProvider";
+import AppRouter from "./routers/AppRouter";
+import Datos from './components/Datos';
+import Button1 from './components/Buttons/ButtonNext';
+import Observacions from './components/Observaciones';*/
+import AppRouter from './routers/AppRouter';
+//import DateTime from './components/DateTime';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+function App(){
+    return (
+        /*<div className='App'>   
+            <AppNav ></AppNav>
+            <Datos ></Datos>
+        </div>*/
+        <div>
+            <AppRouter/>
+        </div>
+    );
 }
 
 export default App;

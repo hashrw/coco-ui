@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,7 +10,21 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export { default as Observacions } from "./components/Observaciones.js";
+export { default as Datos } from "./components/Datos.js"; 
+export {default as ButtonSave} from "./components/Buttons/ButtonSave.js"
+export {default as NotFound} from "./components/NotFound404.js";
+export {default as AppRouter} from "../src/routers/AppRouter.js";
+export {default as Validacion} from "./components/ValidacionDiagnostico.js";
+export {default as Login} from "./components/Login.js";
+export {default as Register} from "./components/Register.js";
+export {default as NavBar} from "./components/NavBar.js";
+export {default as Header} from "./components/Header/index.js";
+export {default as DateTime} from "./components/DateTime.js"
+export {default as ButtonValidar } from "./components/Buttons/ButtonNext.js"
+export {default as Resultados } from "./components/Resultados.js"
+export {default as ButtonYes } from "./components/Buttons/ButtonPrev.js"
+export {default as ButtonNo } from "./components/Buttons/ButtonNo.js"
+export {default as Detalles} from "./components/Details.js"
+export {default as BotonDetalles} from "./components/Buttons/ButtonDetails.js"
+export {default as BotonCodificar} from "./components/Buttons/ButtonCode.js"

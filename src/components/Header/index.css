@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+.lg-header {
+    color: rgb(169, 207, 240);
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .lg-header a {
+    color: rgb(105, 1, 1);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .lg-header a:hover {
+    text-decoration: none;
+  }
+  
+  .lg-header a + a {
+    margin: 0 12px;
+  }
+
+
