@@ -18,7 +18,7 @@ export default class Validacion extends React.Component {
     componentDidMount() {
         axios.get('https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/hhuuvr/innovacion/GIT/sampledata')
             .then(response => this.setState({
-                pacientes: response.data.default
+                pacientes: response.data
             }))
             .catch(error => {
                 console.log(error);
@@ -34,7 +34,6 @@ export default class Validacion extends React.Component {
                                 <thead>
                                     <tr>
                                         <th>Diagnóstico</th>
-                                        <th>SNOMED</th>
                                         </tr>
                                 </thead>
 
@@ -43,8 +42,6 @@ export default class Validacion extends React.Component {
                             return (
                                 <tr key={key}>
                                     <td>{paciente.JUICIO_CLINICO_Y_RESUMEN}</td>
-                                    <td>{paciente.SNOMED}</td>
-                                    
                                 </tr>
                             )
                         })}</tbody>

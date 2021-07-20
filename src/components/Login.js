@@ -2,16 +2,19 @@ import React from 'react';
 import './auth.css';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Button from 'react-bootstrap/Button';
+import { faSignInAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 export default function Login() {
     return (
         <form>
-            <h5> Acceso UI</h5>
+            <h5><FontAwesomeIcon icon={faSignInAlt} /> Acceso</h5>
             <div className="form-group">
                 <label></label>
                 <input type="email" className="form-control" placeholder="Correo electrónico" />
             </div>
-
+            
             <div className="form-group">
                 <label></label>
                 <input type="password" className="form-control" placeholder="Contraseña" />
@@ -28,9 +31,9 @@ export default function Login() {
             <label></label>
             <ButtonGroup>
                 
-                <Button variant="light">Acceder</Button>{' '}
+                <Button variant="danger">Acceder</Button>{}
   
-                <Button variant="danger">Registrarse</Button>{' '}
+                <Button variant="danger" href="/registro">Registrarse</Button>{}
                 
             </ButtonGroup>
             <p className="forgot-password text-right">

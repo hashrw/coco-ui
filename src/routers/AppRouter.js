@@ -28,9 +28,8 @@ export default function AppRouter() {
                     </Switch>
                 </div>
             </div>
-            <div style={{ flex: 1, padding: "15px" }}>
+            <div style={{ flex: 1, padding: "0px" }}>
                 <Switch>
-
                     <Route exact path="/datos" component={Datos} />
 
                     <Route exact path="/observaciones" component={Observacions} />

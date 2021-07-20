@@ -3,12 +3,14 @@ import './auth.css';
 import { Form } from 'react-bootstrap';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Button from 'react-bootstrap/Button';
+import { faHospitalUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class Register extends Component {
     render() {
         return (
             <form>
-                <h5>Registro UI</h5>
+                <h5><FontAwesomeIcon icon= {faHospitalUser} /> Registro</h5>
 
                 <div className="form-group">
                     <label></label>

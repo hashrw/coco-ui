@@ -11,7 +11,7 @@ export default function PrivateRoute({ component: Component, ...rest }) {
       {auth.isLogged() ? (
         <Component />
       ) : (
-        <Redirect to={{ pathname: "/login" , state: { from: location }}} />
+        <Redirect to={{ pathname: "/acceso" , state: { from: location }}} />
       )}
     </Route>
   );

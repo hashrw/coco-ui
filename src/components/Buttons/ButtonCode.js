@@ -1,19 +1,63 @@
-import { Button } from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
 import './styles.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Modal from 'react-bootstrap/Modal';
+import { useState } from 'react';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import Resultados from '../Resultados';
 
-<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+export default function ButtonCode(props) {
+    console.log(props);
+    const [show, setShow] = useState(false);
 
-export default function ButtonCode(props){
+    function handleClick() {
+        setShow(true);
+
+    }
+    function handleClose() {
+        setShow(false);
+
+    }
+
     return (
         <div>
-        <Button className="boton" FontAwesomeIcon icon="fa-solid fa-eye" style={{
-            height: 1,
-            width: 5,
-            marginTop: 1,
-            marginLeft: 5,
-          }} variant="outline-dark">
-        </Button>
+            <Button className="btn" onClick={handleClick} style={{
+                height: 5,
+                width: 5,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+            }} variant="outline-dark"><FontAwesomeIcon icon={faCheckCircle} /></Button>
+
+            <Modal show={show} onHide={handleClose} >
+                <Modal.Header closeButton>
+                    <Modal.Title><h5>Validación</h5></Modal.Title>
+                </Modal.Header>
+                <Modal.Body><div><Resultados /><p></p></div></Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                    <Button variant="primary" onClick={handleClose}>
+                        Save Changes
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+
+            {/*<Modal show={show} onHide={handleClose} className="modal">
+                <Modal.Header closeButton>
+                    <Modal.Title>{props.paciente.NHC}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body><div><h3>{props.paciente.SNOMED}</h3><p>{props.paciente.JUICIO_CLINICO_Y_RESUMEN}</p></div></Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                    <Button variant="primary" onClick={handleClose}>
+            Save Changes
+    </Button>
+                </Modal.Footer>
+            </Modal>*/}
         </div>
-    )
+    );
 }

@@ -1,11 +1,11 @@
-/* estilo botones tabla pacientes */
+/* estilo botones y Modals */
 
 
 .btn {
-    background-color:rgb(158, 41, 5);
+    background-color:rgb(250, 248, 248);
     border: none;
     image-rendering: auto;
-    color: black;
+    color: rgb(194, 1, 1);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -14,11 +14,13 @@
     cursor: pointer;
 }
 
+
+
 .boton {
     background-color: rgb(161, 202, 238);
     border: none;
     image-rendering: auto;
-    color: black;
+    color: rgb(194, 1, 1);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -31,5 +33,6 @@
 
 .btn:hover,
 .boton:hover {
-    background-color: rgb(11, 11, 12);
+    background-color: rgb(194, 1, 1);
 }
+
