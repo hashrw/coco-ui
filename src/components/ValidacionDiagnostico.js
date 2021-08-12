@@ -4,12 +4,11 @@ import '../App.css';
 import Table from 'react-bootstrap/Table';
 import './Table.css';
 import { Container } from 'react-bootstrap';
-import ButtonValidar from '../components/Buttons/ButtonNext';
+
 
 export default class Validacion extends React.Component {
 
     constructor(props) {
-
         super(props);
         this.state = {
             pacientes: []
@@ -29,12 +28,11 @@ export default class Validacion extends React.Component {
         return (
             <>
                 <Container>
-                <h5>Validación de diagnósticos</h5>
                     <Table striped borderless hover size="sm">
                                 <thead>
                                     <tr>
-                                        <th>Diagnóstico</th>
-                                        </tr>
+                                        <th>Diagnósticos</th>
+                                    </tr>
                                 </thead>
 
                         <tbody>{this.state.pacientes.map(function (paciente, key) {
@@ -45,10 +43,9 @@ export default class Validacion extends React.Component {
                                 </tr>
                             )
                         })}</tbody>
+                        
                     </Table>
-                    <div className="validar">
-                        <ButtonValidar /> 
-                    </div>
+                    
                 </Container>
             </>
         )

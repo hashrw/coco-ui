@@ -3,20 +3,25 @@ import './styles.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faStethoscope } from '@fortawesome/free-solid-svg-icons';
 import Resultados from '../Resultados';
+import Observacions from '../Observaciones';
+import Toast from 'react-bootstrap/Toast';
+import ToastContainer from 'react-bootstrap/Toast';
 
 export default function ButtonCode(props) {
-    console.log(props);
+    /*console.log(props);*/
+
     const [show, setShow] = useState(false);
+    const [validado, setValidado] = useState(false);
 
     function handleClick() {
         setShow(true);
 
     }
+
     function handleClose() {
         setShow(false);
-
     }
 
     return (
@@ -27,37 +32,32 @@ export default function ButtonCode(props) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-            }} variant="outline-dark"><FontAwesomeIcon icon={faCheckCircle} /></Button>
+            }} variant="outline-dark">< FontAwesomeIcon icon={faStethoscope} /></Button>
 
-            <Modal show={show} onHide={handleClose} >
+            <Modal scrollable size="lg" aria-labelledby="contained-modal-title-vcenter" centered show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title><h5>Validación</h5></Modal.Title>
+                    <Modal.Title>{props.paciente.NUHSA}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body><div><Resultados /><p></p></div></Modal.Body>
+                <Modal.Body>
+                    <div>
+                        <Resultados NUHSA={props.paciente.NUHSA} />
+
+                        <Observacions setValidado={setValidado} NUHSA={props.paciente.NUHSA} />
+                    </div>
+                </Modal.Body>
+
                 <Modal.Footer>
+                    <div>{validado && <ToastContainer position="middle-center"><Toast bg="Info">
+                        <Toast.Body>Validación registrada</Toast.Body>
+                    </Toast></ToastContainer>}</div>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Save Changes
-                    </Button>
+                    {/*<Button variant="primary" onClick={handleClose}>
+            Save Changes
+        </Button>*/}
                 </Modal.Footer>
             </Modal>
-
-            {/*<Modal show={show} onHide={handleClose} className="modal">
-                <Modal.Header closeButton>
-                    <Modal.Title>{props.paciente.NHC}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body><div><h3>{props.paciente.SNOMED}</h3><p>{props.paciente.JUICIO_CLINICO_Y_RESUMEN}</p></div></Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={handleClose}>
-            Save Changes
-    </Button>
-                </Modal.Footer>
-            </Modal>*/}
         </div>
     );
 }

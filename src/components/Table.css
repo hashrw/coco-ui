@@ -1,14 +1,19 @@
 .table,
 .container {
     position: center;
+    min-height:100vh;/*importante*/
     left: 30px;
     width: 100%;
-    height: 0px;
     margin-bottom: 5rem;
+    padding: 1.5rem;
     justify-content: center;
-    color: #212529;
+    color: #000407;
     }
-    
+
+    .titulo {
+        text-align: center;
+    }
+ 
     .table th,
     .table td {
     text-align: center;

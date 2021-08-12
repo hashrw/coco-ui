@@ -22,9 +22,8 @@ function NavBar(props) {
             <Navbar className="navbar-light" bg="light" variant="light">
                 <Nav className="mr-auto">
                     <Navbar.Brand href="/datos"> <h6></h6></Navbar.Brand>
-                    <Navbar.Brand href="/datos"> <h5>Inicio</h5></Navbar.Brand>
-                    <Navbar.Brand href="/validacion"> <h5>Validación</h5></Navbar.Brand>
-                    
+                    <Navbar.Brand href="/datos"> <h6>Gestión de pacientes</h6></Navbar.Brand>
+                    <h6><DateTime className="dateTime"/></h6>
                 </Nav>
             </Navbar>
             </header>

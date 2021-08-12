@@ -1,6 +1,23 @@
 /* estilo botones y Modals */
 
 
+
+.modal-dialog {
+    max-width: none ;
+    margin: 5rem 5rem;
+
+}
+
+.modal-body {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.modal-footer {
+    justify-content: space-between;
+}
+
+
 .btn {
     background-color:rgb(250, 248, 248);
     border: none;
@@ -14,13 +31,23 @@
     cursor: pointer;
 }
 
+.card-body section div{
+    display: flex;
+    background-color: rgb(213, 233, 252);
+    padding : 5px 10px;
+    border-bottom: 1px solid white;
+}
 
+
+.card-body section div p{
+    margin-right: 10px;
+}
 
 .boton {
-    background-color: rgb(161, 202, 238);
+    /*background-color: rgb(161, 202, 238);*/
     border: none;
     image-rendering: auto;
-    color: rgb(194, 1, 1);
+    /*color: rgb(194, 1, 1);*/
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -29,10 +56,16 @@
     cursor: pointer;
 }
 
-/*sombra al pasar ratón */
+.section {
+    background: #d7e8fa;
+    padding: 20px;
+  }
 
-.btn:hover,
-.boton:hover {
-    background-color: rgb(194, 1, 1);
+.section p {
+    background: #cce5ff;
+    margin: 5px;
+  }
+
+.comments  {
+    padding-left: 15px;
 }
-

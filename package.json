@@ -22,7 +22,9 @@
     "react-bootstrap-table-next": "^4.0.3",
     "jquery": "^3.6.0",
     "react-icons": "^4.2.0",
+    "octicons": "^8.5.0",
     "font-awesome": "^4.7.0",
+    "@primer/octicons": "^14.2.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "react-scripts": "^4.0.3",
@@ -31,6 +33,7 @@
     "express": "^4.17.1",
     "@devesharp/react": "^1.4.33",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "json-find": "^2.0.8",
     "cors": "^2.8.5",
     "bootstrap": "^5.0.1"
   },

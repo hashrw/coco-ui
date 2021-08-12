@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import './auth.css';
 import { Form } from 'react-bootstrap';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Button from 'react-bootstrap/Button';
 import { faHospitalUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +9,8 @@ export default class Register extends Component {
     render() {
         return (
             <form>
+                <div className="auth-wrapper">
+                    <div className="auth-inner">
                 <h5><FontAwesomeIcon icon= {faHospitalUser} /> Registro</h5>
 
                 <div className="form-group">
@@ -43,6 +44,8 @@ export default class Register extends Component {
                             ¿Registrado? <a href="/acceso">Acceder</a>
                         </p>
                     </div>
+                </div>
+                </div>
                 </div>
             </form>
         );

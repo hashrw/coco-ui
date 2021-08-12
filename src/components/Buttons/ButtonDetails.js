@@ -2,22 +2,20 @@ import Button from 'react-bootstrap/Button';
 import './styles.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from 'react-bootstrap/Modal';
-import {useState} from 'react';
+import { useState } from 'react';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function ButtonDetails(props) {
-  /*console.log(props);*/
+
   const [show, setShow] = useState(false);
 
   function handleClick() {
     setShow(true);
 
-
   }
   function handleClose() {
     setShow(false);
-
   }
   return (
     <div>
@@ -29,18 +27,21 @@ export default function ButtonDetails(props) {
         justifyContent: "center",
       }} variant="outline-dark"><FontAwesomeIcon icon={faEye} /></Button>
 
-      <Modal show={show} onHide={handleClose} className="modal">
+      <Modal aria-labelledby="contained-modal-title-vcenter" show={show} show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>{props.paciente.NUHSA}</Modal.Title>
         </Modal.Header>
-        <Modal.Body><div><h3>Validación de diagnóstico</h3><p>{props.paciente.JUICIO_CLINICO_Y_RESUMEN}</p></div></Modal.Body>
+        <Modal.Body>
+          <h5 className="card-header text-center m-3">Diagnóstico</h5>
+          <div className="card-body">
+          <p>{props.paciente.JUICIO_CLINICO_Y_RESUMEN}</p></div></Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
           {/*<Button variant="primary" onClick={handleClose}>
             Save Changes
-    </Button>*/}
+          </Button>*/}
         </Modal.Footer>
       </Modal>
     </div>

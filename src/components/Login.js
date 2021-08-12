@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Login() {
     return (
         <form>
+            <div className="auth-wrapper">
+                <div className="auth-inner">
             <h5><FontAwesomeIcon icon={faSignInAlt} /> Acceso</h5>
             <div className="form-group">
                 <label></label>
@@ -39,6 +41,8 @@ export default function Login() {
             <p className="forgot-password text-right">
                 ¿Olvidó su <a href="#">contraseña?</a>
             </p>
+            </div>
+            </div>
         </form >
     )
 }
