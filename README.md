@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+**INTERFAZ COCO**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+UI COCO pretende consolidar la validación automática de textos clínicos para generar reglas de decisión que permitan a los profesionales médicos realizar un diagnóstico o tratamiento más eficaz, además de lograr grandes beneficios en la gestión clínica.
 
-## Available Scripts
 
-In the project directory, you can run:
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo.
 
-### `npm start`
+**Pre-requisitos** para Windows 10.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-Node.js en el sistema operativo de tu PC. https://nodejs.org/en/download/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-Docker para manejar las dependencias de la aplicación. https://docs.docker.com/docker-for-windows/install/
 
-### `npm test`
+-cliente Git Bash, última versión o superior a 2.29. https://git-scm.com/downloads
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-Editor de textos como el IDE recomendado Visual Studio Code. https://code.visualstudio.com/download
 
-### `npm run build`
+**Instalación**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clonar repositorio remoto (aplicación creada mediante create React App) vía SSH o HTTPS. Para clonar vía SSH es necesario generar el par de claves SSH previamente, puede consultar más detalles aquí https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent, o en su defecto, puede clonar el directorio mediante HTTPS teniendo configurado adecuadamente Git para usar el GCM (Git Credential Manager Core), siguiendo las instrucciones del siguiente enlace https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Una vez clonado, ejecute en la terminal `npm start` , este comando ejecuta acciones definidas en la sección scripts.start del archivo package.json, es decir, inicia la aplicación en la dirección localhost.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Para la instalación de cualquier librería externa que use el gestor de paquetes NPM, puede buscar en la página principal https://www.npmjs.com/ dicho paquete y copiar el nombre y la versión. De modo que para su instalación es necesario abrir el archivo _package.json_ y escribir dicho par entre comillas en la sección de _dependencies: {_ . Si tiene el contenedor ejecutándose, se puede parar con el comando `docker compose down`. Vuelva a iniciarlo con `docker compose up` tras la instalación. En la carpeta _images_ puede encontrar una serie de capturas de la interfaz.
 
-### `npm run eject`
+4. Para consultar las llamadas y peticiones a los endpoint de datos JSON usados se recomienda el uso del cliente http Postman, en su versión web o escritorio. Consulte más detalles en https://www.postman.com/.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Construido con**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React create App**. Entorno para aprender React, y es la mejor manera de empezar a construir una nueva aplicación de una sola página (_SPA_).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Bootstrap**. Framework CSS para el desarrollo frontend muy usado con JavaScript y HTML5.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
