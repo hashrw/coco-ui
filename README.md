@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 =======
 **INTERFAZ COCO**
 
@@ -53,5 +53,4 @@ Agradecimientos al Departamento de Documentación Clínica del Hospital Virgen d
 
 
 
->>>>>>> 9064245c6b72a3059eaa6f3aeaef9a4d2afda3cb
 
