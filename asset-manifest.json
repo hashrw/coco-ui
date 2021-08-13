@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/demoCoco/static/css/main.955f4724.chunk.css",
+    "main.js": "/demoCoco/static/js/main.05ee77ba.chunk.js",
+    "main.js.map": "/demoCoco/static/js/main.05ee77ba.chunk.js.map",
+    "runtime-main.js": "/demoCoco/static/js/runtime-main.da551dc9.js",
+    "runtime-main.js.map": "/demoCoco/static/js/runtime-main.da551dc9.js.map",
+    "static/css/2.2ea3fccd.chunk.css": "/demoCoco/static/css/2.2ea3fccd.chunk.css",
+    "static/js/2.129dcee3.chunk.js": "/demoCoco/static/js/2.129dcee3.chunk.js",
+    "static/js/2.129dcee3.chunk.js.map": "/demoCoco/static/js/2.129dcee3.chunk.js.map",
+    "index.html": "/demoCoco/index.html",
+    "static/css/2.2ea3fccd.chunk.css.map": "/demoCoco/static/css/2.2ea3fccd.chunk.css.map",
+    "static/css/main.955f4724.chunk.css.map": "/demoCoco/static/css/main.955f4724.chunk.css.map",
+    "static/js/2.129dcee3.chunk.js.LICENSE.txt": "/demoCoco/static/js/2.129dcee3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da551dc9.js",
+    "static/css/2.2ea3fccd.chunk.css",
+    "static/js/2.129dcee3.chunk.js",
+    "static/css/main.955f4724.chunk.css",
+    "static/js/main.05ee77ba.chunk.js"
+  ]
+}
