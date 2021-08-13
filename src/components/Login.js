@@ -39,7 +39,7 @@ export default function Login() {
                 
             </ButtonGroup>
             <p className="forgot-password text-right">
-                ¿Olvidó su <a href="#">contraseña?</a>
+                ¿Olvidó su <a href="/">contraseña?</a>
             </p>
             </div>
             </div>

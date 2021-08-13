@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import React from 'react';
 import '../App.css';
 import { withStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import { AppBar } from '@material-ui/core';
 import AccessHeader from './AccessHeader';
 import Card from 'react-bootstrap/Card';
 import DateTime from './DateTime';
@@ -21,8 +21,7 @@ function NavBar(props) {
             </AppBar>
             <Navbar className="navbar-light" bg="light" variant="light">
                 <Nav className="mr-auto">
-                    <Navbar.Brand href="/datos"> <h6></h6></Navbar.Brand>
-                    <Navbar.Brand href="/datos"> <h6>Gestión de pacientes</h6></Navbar.Brand>
+                    <Navbar.Brand href="/datos"> <h6>  Gestión de pacientes</h6></Navbar.Brand>
                     <h6><DateTime className="dateTime"/></h6>
                 </Nav>
             </Navbar>

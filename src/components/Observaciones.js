@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "./Buttons/Button";
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import '../App.css';
 import './Buttons/styles.css';
 import axios from 'axios';
@@ -28,7 +27,7 @@ function Observacions(props) {
       { NUHSA: props.NUHSA, resultado: isValid, observaciones: observaciones })
       .then(response => {
         props.setValidado(true)
-        /*setTimeout(() => { props.setValidado(false) }, 2000)*/
+        setTimeout(() => { props.setValidado(false) }, 2000)
       })
       .catch(error => {
         console.log(error.response);

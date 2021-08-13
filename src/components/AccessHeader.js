@@ -7,12 +7,12 @@ import '../App.css';
 import icono from '../images/iconored.png';
 
 function AccessHeader(props) {
-  
+
   return (
     <Container {...props}>
       <TextWrapper>
         <Title numberOfLines={1}><div>
-          <img src={icono} className="icono" /></div></Title>
+          <img alt ="" src={icono} className="icono" /></div></Title>
       </TextWrapper>
       <TextWrapperFiller></TextWrapperFiller>
       <RightIconButtonRow>

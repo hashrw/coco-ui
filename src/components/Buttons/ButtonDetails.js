@@ -27,7 +27,7 @@ export default function ButtonDetails(props) {
         justifyContent: "center",
       }} variant="outline-dark"><FontAwesomeIcon icon={faEye} /></Button>
 
-      <Modal aria-labelledby="contained-modal-title-vcenter" show={show} show={show} onHide={handleClose}>
+      <Modal aria-labelledby="contained-modal-title-vcenter" show={show}  onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>{props.paciente.NUHSA}</Modal.Title>
         </Modal.Header>
@@ -36,10 +36,10 @@ export default function ButtonDetails(props) {
           <div className="card-body">
           <p>{props.paciente.JUICIO_CLINICO_Y_RESUMEN}</p></div></Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          {/*<Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          {/*<Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={handleClose}>
             Save Changes
           </Button>*/}
         </Modal.Footer>
