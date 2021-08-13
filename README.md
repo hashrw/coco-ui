@@ -1,6 +1,6 @@
 **INTERFAZ COCO**
 
-UI COCO pretende consolidar la validación automática de textos clínicos para generar reglas de decisión que permitan a los profesionales médicos realizar un diagnóstico o tratamiento más eficaz, además de lograr grandes beneficios en la gestión clínica.
+UI COCO pretende consolidar la validación automática de textos clínicos mediante un codificador de diagnósticos que permita clasificar enfermedades y generar reglas de decisión que permitan a los profesionales médicos realizar un diagnóstico o tratamiento más eficaz, además de lograr grandes beneficios en la gestión clínica. La CIE puede utilizarse para clasificar enfermedades y otros problemas de salud consignados en muchos tipos de registros vitales y de salud. Originalmente su uso se limitó a clasificar las causas de mortalidad tal como se mencionan en los registros de defunción.
 
 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo.
