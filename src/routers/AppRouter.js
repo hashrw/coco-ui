@@ -21,6 +21,8 @@ export default function AppRouter() {
                     
                     <Route exact path="/" component={Datos} />
 
+                    <Route exact path="/datos" component={Datos} />
+
                     <Route exact path="/acceso" component={Login} />
 
                     <Route exact path="/registro" component={Register} />
