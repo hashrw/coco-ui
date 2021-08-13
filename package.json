@@ -1,47 +1,50 @@
 {
+  "homepage":"https://hashrw.github.io/demoCoco",
   "name": "validacion-coco",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@devesharp/react": "^1.4.33",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@material-ui/core": "^4.11.4",
+    "@primer/octicons": "^14.2.2",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+    "bootstrap": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "fetch": "^1.1.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "json-find": "^2.0.8",
+    "mdbreact": "^5.0.2",
+    "octicons": "^8.5.0",
     "pure-react-carousel": "^1.27.6",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
     "react-bootstrap-table": "^4.3.1",
+    "react-bootstrap-table-next": "^4.0.3",
+    "react-bootstrap-table2-paginator": "^2.1.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
     "react-list": "^0.8.11",
     "react-native-vector-icons": "^8.1.0",
-    "react-router-dom": "^5.2.0",
     "react-native-web": "^0.17.0",
-    "react-bootstrap-table2-paginator": "^2.1.2",
-    "react-bootstrap-table-next": "^4.0.3",
-    "jquery": "^3.6.0",
-    "react-icons": "^4.2.0",
-    "octicons": "^8.5.0",
-    "font-awesome": "^4.7.0",
-    "@primer/octicons": "^14.2.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
-    "styled-components": "^4.3.2",
-    "mdbreact": "^5.0.2",
-    "express": "^4.17.1",
-    "@devesharp/react": "^1.4.33",
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "json-find": "^2.0.8",
-    "cors": "^2.8.5",
-    "bootstrap": "^5.0.1"
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -60,5 +63,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
